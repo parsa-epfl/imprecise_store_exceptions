@@ -1,0 +1,197 @@
+INFO: setting up PCIe 0
+INFO: loading test.bin...
+INFO: done
+bbl loader
+[    0.000000] Linux version 5.15.0 (qx@parsa) (riscv64-linux-gnu-gcc (GCC) 12.2.0, GNU ld (GNU Binutils) 2.39) #1 SMP PREEMPT Mon Mar 20 10:09:57 UTC 2023
+[    0.000000] OF: fdt: Ignoring memory range 0x80000000 - 0x80200000
+[    0.000000] Machine model: freechips,rocketchip-unknown
+[    0.000000] earlycon: uartlite_a0 at MMIO 0x0000000040600000 (options '')
+[    0.000000] printk: bootconsole [uartlite_a0] enabled
+[    0.000000] NUMA: No NUMA configuration found
+[    0.000000] NUMA: Faking a node at [mem 0x0000000080200000-0x00000000ffffffff]
+[    0.000000] NUMA: NODE_DATA [mem 0xffff6d80-0xffff7fff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA32    [mem 0x0000000080200000-0x00000000ffffffff]
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000080200000-0x00000000ffffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000080200000-0x00000000ffffffff]
+[    0.000000] On node 0, zone DMA32: 512 pages in unavailable ranges
+[    0.000000] SBI specification v0.1 detected
+[    0.000000] riscv: ISA extensions acdfim
+[    0.000000] riscv: ELF capabilities acdfim
+[    0.000000] percpu: Embedded 15 pages/cpu s24536 r8192 d28712 u61440
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 515592
+[    0.000000] Policy zone: DMA32
+[    0.000000] Kernel command line: earlycon console=ttyUL0 root=/dev/resdisk rw norandmaps nokaslr
+[    0.000000] Unknown command line parameters: nokaslr
+[    0.000000] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+[    0.000000] Memory: 1897172K/2095104K available (3255K kernel code, 4716K rwdata, 2048K rodata, 2111K init, 253K bss, 197932K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=2.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] riscv-intc: 64 local interrupts mapped
+[    0.000000] plic: interrupt-controller@3c000000: mapped 6 interrupts with 2 handlers for 4 contexts.
+[    0.000000] riscv_timer_init_dt: Registering clocksource cpuid [0] hartid [0]
+[    0.000000] clocksource: riscv_clocksource: mask: 0xffffffffffffffff max_cycles: 0x24e6a1710, max_idle_ns: 440795202120 ns
+[    0.000001] sched_clock: 64 bits at 10MHz, resolution 100ns, wraps every 4398046511100ns
+[    0.000223] Console: colour dummy device 80x25
+[    0.000332] Calibrating delay loop (skipped), value calculated using timer frequency.. 20.00 BogoMIPS (lpj=100000)
+[    0.000378] pid_max: default: 32768 minimum: 301
+[    0.000596] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.000674] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.003086] ASID allocator using 16 bits (65536 entries)
+[    0.003273] rcu: Hierarchical SRCU implementation.
+[    0.003999] smp: Bringing up secondary CPUs ...
+[    0.004883] smp: Brought up 1 node, 2 CPUs
+[    0.005638] devtmpfs: initialized
+[    0.007237] random: get_random_u32 called from bucket_table_alloc.isra.0+0x50/0x174 with crng_init=0
+[    0.007726] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.007798] futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    0.008370] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.019921] clocksource: Switched to clocksource riscv_clocksource
+[    0.031448] NET: Registered PF_INET protocol family
+[    0.031922] IP idents hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.039185] tcp_listen_portaddr_hash hash table entries: 1024 (order: 2, 16384 bytes, linear)
+[    0.039262] TCP established hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.039445] TCP bind hash table entries: 16384 (order: 6, 262144 bytes, linear)
+[    0.039758] TCP: Hash tables configured (established 16384 bind 16384)
+[    0.040206] UDP hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    0.040287] UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    0.040542] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.041953] workingset: timestamp_bits=44 max_order=19 bucket_order=0
+[    0.055546] io scheduler mq-deadline registered
+[    0.057927] 40600000.serial: ttyUL0 at MMIO 0x40600000 (irq = 4, base_baud = 0) is a uartlite
+[    0.058004] printk: console [ttyUL0] enabled
+[    0.058004] printk: console [ttyUL0] enabled
+[    0.058091] printk: bootconsole [uartlite_a0] disabled
+[    0.058091] printk: bootconsole [uartlite_a0] disabled
+[    0.059027] einject: 21000000-40, mem: 100000000-40000000
+[    0.059224] eserial: 90000000-20000
+[    0.059382] midgard: 20000000-1000
+[    0.067283] loop: module loaded
+[    0.068250] resdisk: 82000000-8000000
+[    0.070150] EXT4-fs (resdisk): mounting ext2 file system using the ext4 subsystem
+[    0.071510] EXT4-fs (resdisk): mounted filesystem without journal. Opts: (null). Quota mode: disabled.
+[    0.071715] VFS: Mounted root (ext2 filesystem) on device 320:0.
+[    0.072200] devtmpfs: mounted
+[    0.075302] Freeing unused kernel image (initmem) memory: 2108K
+[    0.120011] Run /sbin/init as init process
+Database Benchmark:
+  pid: 39
+settings:
+  par-loading : 0
+  pin-cpus    : 0
+  slow-exit   : 0
+  retry-txns  : 0
+  backoff-txns: 0
+  bench       : tpcc
+  scale       : 1
+  num-cpus    : 2
+  num-threads : 1
+  db-type     : ndb-proto2
+  basedir     : /
+  txn-flags   : 0
+  runtime     : 4
+  var-encode  : yes
+  allocator   : libc
+  numa-memory : disabled
+  logfiles : []
+  assignments : []
+  disable-gc : 0
+  disable-snapshots : 0
+  stats-server-sockfile: 
+system properties:
+  btree_internal_node_size: 264
+  btree_leaf_node_size    : 312
+  tuple_prefetch          : no
+  btree_node_prefetch     : yes
+tpcc settings:
+  cross_partition_transactions : 1
+  read_only_snapshots          : 1
+  partition_locks              : 0
+  separate_tree_per_partition  : 0
+  new_order_remote_item_pct    : 1
+  new_order_fast_id_gen        : 0
+  uniform_item_dist            : 0
+  order_status_scan_hack       : 0
+  workload_mix                 : [45, 43, 4, 4, 4]
+Init einject!
+[INFO] finished loading warehouse
+[INFO]   * average warehouse record length: 97 bytes
+[INFO] finished loading item
+[INFO]   * average item record length: 84 bytes
+[INFO] finished loading stock
+[INFO]   * average stock record length: 8 bytes
+[INFO] finished loading district
+[INFO]   * average district record length: 99 bytes
+[INFO] finished loading customer
+[INFO]   * average customer record length: 656.174 bytes 
+[INFO] finished loading order
+[INFO]   * average order_line record length: 8.9872 bytes
+[INFO]   * average oorder record length: 6.9242 bytes
+[INFO]   * average new_order record length: nan bytes
+timed region dataloading took 5247.3 ms
+DB size: 24.5977 MB
+wait_an_epoch(): consistent reads happening in e-1: 2
+[0, 0, 0] txns persisted in loading phase
+table customer_0 size 10000
+table customer_name_idx_0 size 10000
+table district_0 size 10
+table history_0 size 10000
+table item_0 size 1
+table new_order_0 size 0
+table oorder_0 size 10000
+table oorder_c_id_idx_0 size 10000
+table order_line_0 size 100000
+table stock_0 size 1
+table stock_data_0 size 1
+table warehouse_0 size 1
+starting benchmark...
+tpcc: worker id 8 => warehouses [1, 2)
+t_cycles: 4049521362
+s_cycles: 3362955520
+t_instret: 984833772
+s_instret: 807235733
+--- table statistics ---
+table customer_0 size 10000 (+0 records)
+table customer_name_idx_0 size 10000 (+0 records)
+table district_0 size 10 (+0 records)
+table history_0 size 11068 (+1068 records)
+table item_0 size 1 (+0 records)
+table new_order_0 size 957 (+957 records)
+table oorder_0 size 10957 (+957 records)
+table oorder_c_id_idx_0 size 10957 (+957 records)
+table order_line_0 size 109570 (+9570 records)
+table stock_0 size 1 (+0 records)
+table stock_data_0 size 1 (+0 records)
+table warehouse_0 size 1 (+0 records)
+--- benchmark statistics ---
+runtime: 4.00983 sec
+memory delta: 3.9375 MB
+memory delta rate: 0.981962 MB/sec
+logical memory delta: 0.12085 MB
+logical memory delta rate: 0.0301383 MB/sec
+agg_nosync_throughput: 535.185 ops/sec
+avg_nosync_per_core_throughput: 535.185 ops/sec/core
+agg_throughput: 535.185 ops/sec
+avg_per_core_throughput: 535.185 ops/sec/core
+agg_persist_throughput: 535.185 ops/sec
+avg_per_core_persist_throughput: 535.185 ops/sec/core
+avg_latency: 1.15489 ms
+avg_persist_latency: 0 ms
+agg_abort_rate: 0 aborts/sec
+avg_per_core_abort_rate: 0 aborts/sec/core
+--- system counters (for benchmark) ---
+--- perf counters (if enabled, for benchmark) ---
+--- allocator stats ---
+[allocator] ncpus=0
+---------------------------------------
+TBENCH_MAXREQS = total einject size: 0x3ffff000/ # 

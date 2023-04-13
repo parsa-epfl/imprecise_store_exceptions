@@ -1,0 +1,95 @@
+INFO: setting up PCIe 0
+INFO: loading test.bin...
+INFO: done
+bbl loader
+[    0.000000] Linux version 5.15.0 (qx@parsa) (riscv64-linux-gnu-gcc (GCC) 12.2.0, GNU ld (GNU Binutils) 2.39) #1 SMP PREEMPT Mon Mar 20 10:09:57 UTC 2023
+[    0.000000] OF: fdt: Ignoring memory range 0x80000000 - 0x80200000
+[    0.000000] Machine model: freechips,rocketchip-unknown
+[    0.000000] earlycon: uartlite_a0 at MMIO 0x0000000040600000 (options '')
+[    0.000000] printk: bootconsole [uartlite_a0] enabled
+[    0.000000] NUMA: No NUMA configuration found
+[    0.000000] NUMA: Faking a node at [mem 0x0000000080200000-0x00000000ffffffff]
+[    0.000000] NUMA: NODE_DATA [mem 0xffff6d80-0xffff7fff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA32    [mem 0x0000000080200000-0x00000000ffffffff]
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000080200000-0x00000000ffffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000080200000-0x00000000ffffffff]
+[    0.000000] On node 0, zone DMA32: 512 pages in unavailable ranges
+[    0.000000] SBI specification v0.1 detected
+[    0.000000] riscv: ISA extensions acdfim
+[    0.000000] riscv: ELF capabilities acdfim
+[    0.000000] percpu: Embedded 15 pages/cpu s24536 r8192 d28712 u61440
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 515592
+[    0.000000] Policy zone: DMA32
+[    0.000000] Kernel command line: earlycon console=ttyUL0 root=/dev/resdisk rw norandmaps nokaslr
+[    0.000000] Unknown command line parameters: nokaslr
+[    0.000000] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+[    0.000000] Memory: 1897172K/2095104K available (3255K kernel code, 4716K rwdata, 2048K rodata, 2111K init, 253K bss, 197932K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=2.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] riscv-intc: 64 local interrupts mapped
+[    0.000000] plic: interrupt-controller@3c000000: mapped 6 interrupts with 2 handlers for 4 contexts.
+[    0.000000] riscv_timer_init_dt: Registering clocksource cpuid [0] hartid [0]
+[    0.000000] clocksource: riscv_clocksource: mask: 0xffffffffffffffff max_cycles: 0x24e6a1710, max_idle_ns: 440795202120 ns
+[    0.000001] sched_clock: 64 bits at 10MHz, resolution 100ns, wraps every 4398046511100ns
+[    0.000222] Console: colour dummy device 80x25
+[    0.000332] Calibrating delay loop (skipped), value calculated using timer frequency.. 20.00 BogoMIPS (lpj=100000)
+[    0.000379] pid_max: default: 32768 minimum: 301
+[    0.000597] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.000676] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.003083] ASID allocator using 16 bits (65536 entries)
+[    0.003270] rcu: Hierarchical SRCU implementation.
+[    0.003994] smp: Bringing up secondary CPUs ...
+[    0.004876] smp: Brought up 1 node, 2 CPUs
+[    0.005631] devtmpfs: initialized
+[    0.007235] random: get_random_u32 called from bucket_table_alloc.isra.0+0x50/0x174 with crng_init=0
+[    0.007723] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.007796] futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    0.008367] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.019922] clocksource: Switched to clocksource riscv_clocksource
+[    0.031444] NET: Registered PF_INET protocol family
+[    0.031918] IP idents hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.039175] tcp_listen_portaddr_hash hash table entries: 1024 (order: 2, 16384 bytes, linear)
+[    0.039252] TCP established hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.039436] TCP bind hash table entries: 16384 (order: 6, 262144 bytes, linear)
+[    0.039747] TCP: Hash tables configured (established 16384 bind 16384)
+[    0.040195] UDP hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    0.040276] UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    0.040528] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.041939] workingset: timestamp_bits=44 max_order=19 bucket_order=0
+[    0.055528] io scheduler mq-deadline registered
+[    0.057906] 40600000.serial: ttyUL0 at MMIO 0x40600000 (irq = 4, base_baud = 0) is a uartlite
+[    0.057984] printk: console [ttyUL0] enabled
+[    0.057984] printk: console [ttyUL0] enabled
+[    0.058070] printk: bootconsole [uartlite_a0] disabled
+[    0.058070] printk: bootconsole [uartlite_a0] disabled
+[    0.059006] einject: 21000000-40, mem: 100000000-40000000
+[    0.059205] eserial: 90000000-20000
+[    0.059364] midgard: 20000000-1000
+[    0.067269] loop: module loaded
+[    0.068236] resdisk: 82000000-8000000
+[    0.070142] EXT4-fs (resdisk): mounting ext2 file system using the ext4 subsystem
+[    0.071503] EXT4-fs (resdisk): mounted filesystem without journal. Opts: (null). Quota mode: disabled.
+[    0.071708] VFS: Mounted root (ext2 filesystem) on device 320:0.
+[    0.072196] devtmpfs: mounted
+[    0.075301] Freeing unused kernel image (initmem) memory: 2108K
+[    0.120011] Run /sbin/init as init process
+total einject size: 0x3ffff000Init einject!
+1/1 rw1/m
+kvtest_rw1_seed
+kvtest_rw1puts_seed
+0: now getting
+0: {"table":"mb","test":"rw1","trial":0,"thread":0,"puts":310687,"puts_per_sec":155343.5,"gets":310687,"gets_per_sec":77671.75,"ops":621374,"ops_per_sec":310687}
+{"table":"mb","test":"rw1","trial":0,"thread":0,"puts":310687,"puts_per_sec":155343.5,"gets":310687,"gets_per_sec":77671.75,"ops":621374,"ops_per_sec":310687}
+
+/ # 
