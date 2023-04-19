@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+#
+# See LICENSE for license details
 
 import os
 import sys

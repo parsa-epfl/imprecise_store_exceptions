@@ -1,3 +1,5 @@
+# See LICENSE for license details
+
 AGFI ?= 09eae3473052a0cd3
 BIN  ?= test.bin
 IMG  ?= test.img
